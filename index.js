@@ -19,7 +19,7 @@ app.use(cookieParser());
 // Configure CORS to allow the frontend origin and support credentials (cookies)
 // NOTE: set the origin to the actual front-end origin (vite default: http://localhost:5173)
 const corsOptions = {
-    origin: 'http://localhost:5173/',
+    origin: 'http://localhost:5173',
     credentials: true, // allow session cookie from browser to pass through
 }
 app.use(cors(corsOptions));
