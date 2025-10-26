@@ -27,8 +27,8 @@ app.use(cors(corsOptions));
 
 // api's
 
-app.use("/api/v1/user", userRoute);
-app.use("/api/v1/expense", expenseRoute);
+app.get("/api/v1/user", userRoute);
+app.get"/api/v1/expense", expenseRoute);
 
 app.listen(PORT, ()=>{
     connectDB();
